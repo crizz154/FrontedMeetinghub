@@ -1,6 +1,6 @@
 /* styles.css */
 
-/* Estilos generales */
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -112,3 +112,35 @@ footer {
         flex: 1 1 100%; /* Las salas ocupan todo el ancho en pantallas pequeñas */
     }
 }
+.reserva-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+  
+.reserva-card.active-reserva {
+    border: 2px solid green;
+    background-color: #f0fff4;
+  }
+  
+.reserva-card.past-reserva {
+    opacity: 0.6;
+    border: 1px dashed #aaa;
+  }
+  
+.button.cancel {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+.button.cancel:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
