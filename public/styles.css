@@ -1,0 +1,114 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Enlaces de navegación */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Sección de salas */
+.salas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sala {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.sala:hover {
+    transform: translateY(-5px);
+}
+
+.sala h2 {
+    margin: 0 0 10px;
+}
+
+.sala p {
+    margin: 0 0 15px;
+}
+
+.sala button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sala button:hover {
+    background: #218838;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .salas {
+        flex-direction: column;
+    }
+
+    .sala {
+        flex: 1 1 100%; /* Las salas ocupan todo el ancho en pantallas pequeñas */
+    }
+}
